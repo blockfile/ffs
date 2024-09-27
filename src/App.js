@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useRoutes } from "react-router-dom";
+import Home from "./components/pages/home";
+import Profile from "./components/pages/profile";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let element = useRoutes([
+        {
+            path: "/",
+            element: <Home />,
+        },
+        {
+            path: "/profile/:walletAddress", // Add dynamic profile route
+            element: <Profile />,
+        },
+    ]);
+    return (
+        <div
+            className="App"
+            style={{
+                fontFamily: "Changa, sans-serif",
+                backgroundColor: "#18191A",
+            }}>
+            {element}
+        </div>
+    );
 }
 
 export default App;

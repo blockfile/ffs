@@ -1,0 +1,35 @@
+.home-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.home-container::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.home-container::-webkit-scrollbar-track {
+    background: #242526;
+    border-radius: 10px;
+}
+
+.main-content {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray #242526;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: #242526;
+    border-radius: 10px;
+}
+body {
+    overflow: hidden;
+}

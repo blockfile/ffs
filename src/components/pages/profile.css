@@ -1,0 +1,18 @@
+/* In your CSS file or as Tailwind classes */
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-area {
+    width: 60%; /* Adjust the width to center the content */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
